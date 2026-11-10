@@ -58,7 +58,7 @@ Console.WriteLine($"Total salary: {department.CalculateTotalSalary()}");
 Console.WriteLine($"Average salary: {department.CalculateAverageSalary()}");
 
 Console.WriteLine($"Highest paid: {department.FindHighestPaidEmployee()}");
-Console.WriteLine($"Lowest paid: {department.FindLowetsPaidEmployee()}");
+Console.WriteLine($"Lowest paid: {department.FindLowestPaidEmployee()}");
 
 department.RemoveEmployee(p1.ID);
 
@@ -71,9 +71,14 @@ Console.WriteLine($"Average salary: {department.CalculateAverageSalary()}");
 
 Employee ? found = department.FindEmployee(p2.ID);
 if (found != null)
+{
     Console.WriteLine($"Найден {found.Name}");
+}
 else
+{
     Console.WriteLine("Не найден");
+
+}
 
 
 

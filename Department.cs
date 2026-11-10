@@ -17,7 +17,7 @@ namespace LAB08_1
 
         public bool AddEmployee(Employee employee)
         {
-            if (employees == null)        //если нет
+            if (employee == null)        //если нет
             {
                 return false;
             }
@@ -36,7 +36,7 @@ namespace LAB08_1
 
         public bool RemoveEmployee(int id)
         {
-            for (int i = 0; i < employees.Count; i++)
+            for (int i = 0; i < employees.Count; i++)      
             {
                 if (employees[i].ID == id)
                 {
@@ -126,7 +126,7 @@ namespace LAB08_1
             return null;
         }
 
-        public Employee? FindHighestPaidEmployee()
+        public Employee ? FindHighestPaidEmployee()
         {
             if (employees.Count == 0)
             {
@@ -145,7 +145,7 @@ namespace LAB08_1
             return highest;
         }
       
-        public Employee? FindLowetsPaidEmployee()
+        public Employee ? FindLowestPaidEmployee()
         {
             if (employees.Count == 0)
             {
