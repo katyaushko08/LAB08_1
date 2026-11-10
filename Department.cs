@@ -17,14 +17,14 @@ namespace LAB08_1
 
         public bool AddEmployee(Employee employee)
         {
-            if (employee == null)        //если нет
+            if (employee == null)        
             {
                 return false;
             }
 
             foreach (Employee emp in employees)
             {
-                if (emp.ID == employee.ID)         //на дубликат если такой есть уже
+                if (emp.ID == employee.ID)         //на дубликат 
                 {
                     return false;
                 }
